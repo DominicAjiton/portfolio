@@ -66,33 +66,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section id="projects" className="py-20">
-        <div className="container px-4 mx-auto">
-          <motion.h2
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-3xl font-bold text-center mb-12"
-          >
-            Featured Projects
-          </motion.h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <ProjectCard
-              title="E-Commerce Platform"
-              description="A full-stack e-commerce solution built with Next.js and Nest.js"
-              image="https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2089&q=80"
-              technologies={['Next.js', 'Nest.js', 'PostgreSQL', 'Stripe']}
-            />
-            <ProjectCard
-              title="Task Management System"
-              description="Real-time task management application with team collaboration features"
-              image="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
-              technologies={['React', 'Node.js', 'Socket.io', 'MongoDB']}
-            />
-          </div>
-        </div>
-      </section>
+ 
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-accent/50">
@@ -193,3 +167,35 @@ function ProjectCard({
     </motion.div>
   );
 }
+
+/*
+
+     {/* Projects Section }
+     <section id="projects" className="py-20">
+     <div className="container px-4 mx-auto">
+       <motion.h2
+         initial={{ opacity: 0 }}
+         whileInView={{ opacity: 1 }}
+         viewport={{ once: true }}
+         className="text-3xl font-bold text-center mb-12"
+       >
+         Featured Projects
+       </motion.h2>
+       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+         <ProjectCard
+           title="E-Commerce Platform"
+           description="A full-stack e-commerce solution built with Next.js and Nest.js"
+           image="https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2089&q=80"
+           technologies={['Next.js', 'Nest.js', 'PostgreSQL', 'Stripe']}
+         />
+         <ProjectCard
+           title="Task Management System"
+           description="Real-time task management application with team collaboration features"
+           image="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
+           technologies={['React', 'Node.js', 'Socket.io', 'MongoDB']}
+         />
+       </div>
+     </div>
+   </section>
+
+   */
